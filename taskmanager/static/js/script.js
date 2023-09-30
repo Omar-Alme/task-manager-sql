@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let sidenav = document.querySelectorAll('.sidenav');
     M.Sidenav.init(sidenav);
 
+    // datepicker initialisation
     let datepicker = document.querySelectorAll(".datepicker");;;
     M.Datepicker.init(datepicker, {
         format: "dd mmmm, yyyy",
@@ -12,4 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // select initialization
     let selects = document.querySelectorAll("select");
     M.FormSelect.init(selects);
+
+    // Collapse initialization
+    let collapsibles = document.querySelectorAll('.collapsible');
+    M.Collapsible.init(collapsibles);
 });
